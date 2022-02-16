@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivities.Authentication.SignUpActivity"
+    android:background="@drawable/gradient_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".SignUp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/SiginUp_UserImage"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_user"
+            tools:ignore="VectorDrawableCompat" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:hint="@string/fullname"
+            android:textColorHint="@color/lighgrey"
+            app:hintTextColor="@color/PopRedPink"
+            app:helperTextTextColor="@color/PopRedPink"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/PopPink">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SiginUp_et_Fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/PopPink"
+                 android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:hint="@string/username"
+            app:hintTextColor="@color/PopRedPink"
+            android:textColorHint="@color/lighgrey"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/PopPink">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SiginUp_et_Nickname"
+                android:layout_width="match_parent"
+                android:textColor="@color/PopPink"
+                 android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:hint="@string/email"
+            app:hintTextColor="@color/PopRedPink"
+            android:textColorHint="@color/lighgrey"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/PopPink">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SiginUp_et_Email"
+                android:layout_width="match_parent"
+                android:textColor="@color/PopPink"
+                 android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:hint="@string/password"
+            app:hintTextColor="@color/PopRedPink"
+            android:textColorHint="@color/lighgrey"
+            app:helperTextTextColor="@color/PopRedPink"
+            app:helperText="* Should equal 6 digits"
+            app:counterEnabled="true"
+            app:counterTextColor="@color/PopRedPink"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/PopPink">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SiginUp_et_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/PopPink"
+                 android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:hint="@string/re_password"
+            app:hintTextColor="@color/PopRedPink"
+            android:textColorHint="@color/lighgrey"
+            app:endIconTint="@color/PopPink"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SiginUp_et_RePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/PopPink"
+                 android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/PopRedPink"
+            android:textColorHint="@color/lighgrey"
+            app:endIconTint="@color/PopPink"
+            app:helperTextTextColor="@color/PopRedPink"
+            android:hint="@string/birthdate"  >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SiginUp_et_BirthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="date"
+                 android:textColor="@color/PopPink"
+                android:textStyle="bold"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:id="@+id/SiginUp_country_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textColor="@color/PopPink"
+            android:background="@drawable/material"
+            app:layout_constraintTop_toBottomOf="@+id/SiginUp_CbAdminstrator">
+
+            <com.gbksoft.countrycodepickerlib.CountryCodePicker
+                android:id="@+id/country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_45sdp"
+                app:ccp_contentColor="@color/lighgrey"
+                android:background="@color/transparent"
+                android:gravity="center"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:hint="@string/phone"
+                app:hintTextColor="@color/PopRedPink"
+                android:textColorHint="@color/lighgrey"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/PopPink">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/SiginUp_et_Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/PopPink"
+                     android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textColor="@color/PopPink"
+            android:background="@drawable/material"
+            app:layout_constraintTop_toBottomOf="@+id/SiginUp_CbAdminstrator">
+
+            <RadioGroup
+                android:id="@+id/SiginUp_RDGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/SiginUp_Rfemale"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:width="@dimen/_1sdp"
+                    android:text="@string/female"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="normal"
+                    android:buttonTint="@color/PopPink"
+                    android:textColor="@color/PopPink"
+                    android:fontFamily="@font/dancing_script_bold"
+
+                    />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/SiginUp_Rmale"
+                    android:layout_width="191dp"
+                    android:layout_height="wrap_content"
+                    android:width="@dimen/_1sdp"
+                    android:text="@string/male"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="normal"
+                    android:buttonTint="@color/PopPink"
+                    android:textColor="@color/PopPink"
+                    android:fontFamily="@font/dancing_script_bold"
+
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/SiginUp_btn_Save"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/button_backround_colored"
+            android:fontFamily="@font/dancing_script_bold"
+            android:text="@string/sign_up"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textSize="@dimen/_18ssp" />
+
+    </LinearLayout>
+</ScrollView>

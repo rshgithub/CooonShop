@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/navigation_header_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/user_image"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/ic_user"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        />
+
+
+    <TextView
+        android:id="@+id/user_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_name"
+        android:layout_below="@id/user_image"
+        android:textColor="@color/pink"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_19ssp"
+        android:layout_marginLeft="@dimen/_15sdp"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@nickName"
+        android:layout_below="@id/user_full_name"
+        android:textColor="@color/lighgrey"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_15sdp"/>
+
+
+    <View
+        android:layout_below="@+id/user_name"
+        android:layout_width="match_parent"
+        style="@style/line"/>
+</RelativeLayout>

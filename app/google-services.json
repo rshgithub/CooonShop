@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "934234781874",
+    "project_id": "cocoonshop-9d488",
+    "storage_bucket": "cocoonshop-9d488.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934234781874:android:cb84b1afa3ad6a469d31ab",
+        "android_client_info": {
+          "package_name": "com.example.cocoonshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934234781874-cc62881kikv5fi0a1tfirfauar4jha4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANNKtp6p7PBkVS82hcgU61dTdcQEWNiI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934234781874-cc62881kikv5fi0a1tfirfauar4jha4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

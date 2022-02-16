@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_item_layout"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardCornerRadius="15dp"
+    android:elevation="@dimen/_5sdp"
+    android:outlineAmbientShadowColor="@color/lighgrey"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_marginStart="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_2sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/category_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:shapeAppearanceOverlay="@style/RoundSliderImage"
+            app:srcCompat="@drawable/sliderthree" />
+
+        <TextView
+            android:id="@+id/category_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/PopPink"
+            android:fontFamily="@font/aclonica"
+            android:text="Woman"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"  />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

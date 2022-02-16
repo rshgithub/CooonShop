@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".AddNewProductActivty">
+
+    <TextView
+        android:id="@+id/wellcomTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="cursive"
+        android:textSize="@dimen/_25ssp"
+        android:textColor="@color/PopPink"
+        android:text="Add New Product"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/SiginUp_ImageView"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/RoundImageView"
+        app:srcCompat="@drawable/default_hoodie"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:hint="@string/product_name"
+        app:boxBackgroundColor="@color/pink"
+        android:background="@drawable/button_backround_transparent"
+        android:textColorHint="@color/PopPink"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/pink">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AddNew_et_ProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/material"  />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:hint="@string/description"
+        app:boxBackgroundColor="@color/pink"
+        android:background="@drawable/button_backround_transparent"
+        android:textColorHint="@color/PopPink"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/pink">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AddNew_et_ProductDescription"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:background="@drawable/material"
+            android:layout_height="wrap_content"  />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/AddNew_et_ProductCategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/button_backround_transparent"
+        android:hapticFeedbackEnabled="false"
+        android:hint="@string/country"
+        app:hintTextColor="@color/pink"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        tools:ignore="MissingClass" />
+
+    <!--        android:background="@drawable/button_backround_transparent"-->
+    <!--            android:entries="@array/counters"-->
+
+    <!--        android:background="@drawable/material"-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginBottom="@dimen/_10sdp"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/price"
+            android:textColorHint="@color/PopPink"
+            android:background="@drawable/button_backround_transparent"
+            app:boxBackgroundColor="@color/pink"
+            app:endIconMode="clear_text"
+            android:layout_margin="@dimen/_2sdp"
+            app:endIconTint="@color/pink">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/AddNew_et_ProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:drawableStart="@drawable/ic_baseline_attach_money_24"
+                android:textColor="@color/white"
+                android:background="@drawable/material"  />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/old_price"
+            android:textColorHint="@color/PopPink"
+            android:background="@drawable/button_backround_transparent"
+            app:boxBackgroundColor="@color/pink"
+            android:layout_margin="@dimen/_2sdp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/pink">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/AddNew_et_ProductOldPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:drawableStart="@drawable/ic_baseline_attach_money_24"
+                android:textColor="@color/white"
+                android:background="@drawable/material"  />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/rating"
+            android:textColorHint="@color/PopPink"
+            android:background="@drawable/button_backround_transparent"
+            app:boxBackgroundColor="@color/pink"
+            android:layout_margin="@dimen/_2sdp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/pink">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/AddNew_et_ProductOldRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/material"
+                android:inputType="number"
+                android:drawableStart="@drawable/buy"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/AddNew_et_ProductBestSell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/material"
+        android:buttonTint="@color/PopPink"
+        android:checked="false"
+        android:fontFamily="@font/dancing_script_bold"
+        android:text="@string/best_sell"
+        android:textColor="@color/PopPink"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/SiginUp_et_Phone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SiginUp_btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/add_product"
+        android:textStyle="bold"
+        android:background="@drawable/button_backround_colored"
+        android:fontFamily="@font/dancing_script_bold"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_18ssp"
+        />
+
+</LinearLayout>
+
+

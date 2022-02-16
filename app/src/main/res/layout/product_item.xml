@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_item_layout"
+    android:layout_width="wrap_content"
+    app:cardCornerRadius="@dimen/_12sdp"
+    android:elevation="@dimen/_5sdp"
+    app:cardElevation="@dimen/_5sdp"
+    android:outlineAmbientShadowColor="@color/lighgrey"
+    android:layout_margin="@dimen/_7sdp"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/product_image"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_160sdp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/RoundedSquare"
+                app:srcCompat="@drawable/default_hoodie"    />
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/PopPink"
+                android:fontFamily="@font/dancing_script_bold"
+                android:gravity="start"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:text="Float Cake Vietnam"
+                android:textColor="@color/PopPink"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/product_image" />
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linearLayout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_5sdp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:weightSum="3"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/product_name">-->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/product_new_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24"
+            android:drawableTint="@color/LightGreen"
+            android:fontFamily="@font/dancing_script_bold"
+            android:text="50.90"
+            android:textColor="@color/GreenPrice"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/product_old_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24"
+            android:drawableTint="@color/underline"
+            android:fontFamily="@font/dancing_script_bold"
+            android:text="90.90"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/product_new_price"
+            app:layout_constraintTop_toBottomOf="@+id/product_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/product_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/aclonica"
+            android:padding="@dimen/_2sdp"
+            android:text="woman"
+            android:textColor="@color/mdtp_light_gray"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.901"
+            app:layout_constraintStart_toEndOf="@+id/product_new_price"
+            app:layout_constraintTop_toBottomOf="@+id/product_name"
+            app:layout_constraintVertical_bias="0.363" />
+        <!--            </LinearLayout>-->
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cocoonshop">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/default_hoodie"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CoCoonShop">
+        <activity android:name=".AddNewProductActivty"/>
+        <activity android:name=".MainActivities.SearchActivity" />
+        <activity android:name=".UserInterfaces.ProfileActivity" />
+        <activity android:name=".MainActivities.Authentication.SignUpActivity" />
+        <activity android:name=".MainActivities.Authentication.SignInActivity" />
+        <activity android:name=".UserInterfaces.Cart" />
+        <activity android:name=".UserInterfaces.FavouritesActivity" />
+        <activity android:name=".MainActivities.AllCategoryProducts" />
+        <activity android:name=".Wellcome.WalkthroughtActivity" />
+        <activity android:name=".MainActivities.Product_Details" />
+        <activity android:name=".Wellcome.TransitionActivity" />
+        <activity android:name=".MainActivities.HomePageActivity" />
+        <activity android:name=".MainActivities.ContactUsActicity" />
+        <activity android:name=".Wellcome.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+        <!--    to share product details
+        issue arises after Android SDK 24 or android 7.0
+
+        we were able to access file content using file:///
+        after 7.0, we have to use content:// which is a more secure way to access files.
+
+        When we want to access file content outside the application storage,
+        we need to use FileProvider.getUriForFile() method.
+        -->
+        <provider
+            android:authorities="com.example.cocoonshop.MainActivities.Product_Details.provider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path"/>
+        </provider>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,119 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    compileSdkVersion 31 // <-- This
+    defaultConfig {
+        applicationId "com.example.app"
+        targetSdkVersion 31 // <-- and this too
+    }
+
+
+    defaultConfig {
+        applicationId "com.example.cocoonshop"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+        
+    }
+}
+
+dependencies {
+
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+    implementation 'com.jaredrummler:material-spinner:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.1'
+    implementation 'androidx.navigation:navigation-ui:2.3.1'
+    implementation 'org.jetbrains:annotations:15.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation('com.shagi:material-datepicker:1.3') {
+        exclude group: 'com.android.support'
+    }
+    //Splash used libraries
+    implementation 'com.airbnb.android:lottie:2.2.5'
+
+    //Image slider
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
+    //Size
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    // Images affect
+    compile 'com.yinglan.shadowimageview:shadowimageview:1.0.4'
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
+
+    // Room Database
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+    testImplementation "android.arch.persistence.room:testing:1.1.1"
+    implementation 'androidx.room:room-runtime:2.2.5'
+
+    // animation like button
+    compile 'com.github.jd-alexander:LikeButton:0.2.3'
+
+    // Toast Styles
+    implementation 'com.muddzdev:styleabletoast:2.2.3'
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+
+    // swipe button
+    implementation 'com.ebanx:swipe-button:0.4.0'
+
+    // glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    // firebase authentication
+    implementation platform('com.google.firebase:firebase-bom:29.0.3')
+    implementation 'com.google.firebase:firebase-auth'
+
+    // firebase cloud storage
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.firebaseui:firebase-ui-storage:7.2.0'
+
+    implementation 'com.google.firebase:firebase-firestore'
+    // firebase UI + recycler options
+    implementation 'com.firebaseui:firebase-ui-firestore:6.2.1'
+
+    //Shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    // country & phone spinner
+    implementation 'com.github.gbksoft:GBKCountryCodePicker:v1.0.0'
+
+
+}
+

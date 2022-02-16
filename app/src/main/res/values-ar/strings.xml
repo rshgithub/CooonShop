@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cocoon</string>
+
+    <string name="item_name">اسم المنتح</string>
+    <string name="item_price">سعر المنتج</string>
+    <string name="Description">الوصف</string>
+    <string name="ok">حسناً</string>
+    <string name="cancel">انهاء</string>
+    <string name="cash">نقداً</string>
+    <string name="save">حفظ</string>
+    <string name="total">السعر الكلي :</string>
+    <string name="quantity">الكمية :</string>
+    <string name="item_details">تفاصيل المنتج</string>
+    <string name="buy">شراء</string>
+    <string name="price">السعر</string>
+    <string name="date_and_time">الوقت و اتاريخ</string>
+    <string name="sign_in">تسجيل دخول</string>
+    <string name="sign_up">تسجيل جديد</string>
+    <string name="password">كلمة السر <font color='#FF0000'>*</font></string>
+    <string name="signin">تسجيل دخول</string>
+    <string name="add_image">اضافة صور</string>
+    <string name="fullname">الاسم الكامل <font color='#FF0000'>*</font></string>
+    <string name="country">الدولة <font color='#FF0000'>*</font></string>
+    <string name="username">الاسم المستعار <font color='#FF0000'>*</font></string>
+    <string name="re_password">كلمة السر مجدداً <font color='#FF0000'>*</font></string>
+    <string name="birthdate">تاريخ المسلاد <font color='#FF0000'>*</font></string>
+    <string name="phone">رقم الهاتق <font color='#FF0000'>*</font></string>
+    <string name="female">أنثى</string>
+    <string name="male">ذكر</string>
+    <string name="change_password">تغيير كلمة السر</string>
+    <string name="add_new_item">اضافة عنصر جديد</string>
+    <string name="item_added"> اضفط مجدداً لتعديل العنصر في السلة </string>
+    <string name="dec_paragraph">توضيح</string>
+
+    <string name="_9">9</string>
+    <string name="enter_new_password">أدخل كلمة سر جديدة <font color='#FF0000'>*</font></string>
+    <string name="re_enter_password">اعد ادخال كلمة السر <font color='#FF0000'>*</font></string>
+    <string name="enter_old_password">أدخل كلمة السر القديمة <font color='#FF0000'>*</font></string>
+    <string name="new_pass">كلمة السر الجديدة</string>
+    <string name="con_call">اتصل بنا</string>
+    <string name="con_fac">صفحة facebook</string>
+    <string name="con_site"> UCAS موقع</string>
+    <string name="con_email">أرسل بريد الكتروني</string>
+    <string name="con_contact">تواصل معنا عبر :</string>
+    <string name="adresss">العنوان</string>
+    <string name="register">تسجيل مستخدم جديد</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">بعد</string>
+    <string name="previous">قبل</string>
+
+    <string name="con_back">رجوع</string>
+    <string name="cam">التقط صورة من الكمرا</string>
+    <string name="about">عن التطبيق</string>
+    <string name="gall">ارفع صورة من الاستديو</string>
+    <string name="call">اتصل بنا</string>
+    <string name="fac">صفحة facebook</string>
+    <string name="site">UCAS موقع</string>
+    <string name="email">البريد الاكتروني <font color='#FF0000'>*</font></string>
+    <string name="back">رجوع</string>
+    <string name="contact">تواصل معنا :</string>
+    <string name="image">ضبط الصورة :</string>
+    <string name="phone_number">رقم الهاتف </string>
+    <string name="RegisterHint">لا تملك حساباً ؟  </string>
+    <string name="shop_now">تسوق الآن </string>
+    <string name="hoodie_name">اسم المنتج</string>
+    <string name="color">اللون</string>
+    <string name="size">المقاس</string>
+    <string name="rating">التقييم</string>
+    <string name="reviews">الآراء</string>
+    <string name="best_sell">أفضل المنتجات </string>
+    <string name="see_all_Products">كل المنتجات </string>
+    <string name="see_all_bestSell">الجميع </string>
+    <string name="categories">التصنيفات</string>
+    <string name="WellcomShop">مرحبا بك في متجر CoCoon</string>
+    <string name="explore_us">استكشفنا</string>
+    <string name="product_name">اسم المنتج </string>
+    <string name="old_price">السعر القديم </string>
+    <string name="description">الوصف</string>
+    <string name="add_product">اضافة منتج</string>
+    <string name="skip">تجاوز</string>
+
+    //walkthrought
+    //Headings
+    <string name="heading_one">تسوق من منزلك</string>
+    <string name="heading_two">الآراء مهمة</string>
+    <string name="heading_three">سرعة التوصيل </string>
+    <string name="heading_fourth"> الدفع نقدا</string>
+
+    //Description
+    <string name="desc_one">استكشف جديد المنتجات و أنت في منزلك بكل أريحية </string>
+    <string name="desc_two">أعطنا تغذية راجعنا حول آرائك و تقييماتك فهمي تهمنا</string>
+    <string name="desc_three">لن نتأخر أبداً ، كل الطلبيات ستكون أسرع مما تظن </string>
+    <string name="desc_fourth">الدفع نقدأص لضمان حقك و اعجابك</string>
+    <string name="discount"> تخفيضات على أغلب المنتجات</string>
+    <string name="eid_offer">تخفيضات العيد !</string>
+    <string name="home">الرئيسية</string>
+    <string name="profile">صفحتي الشخصية</string>
+    <string name="favourites">المفضلة</string>
+    <string name="settings">الاعدادات</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="sign_out">خروج</string>
+    <string name="communicate">تواصل</string>
+    <string name="share_app">شارك</string>
+    <string name="administrator">الشمرف</string>
+    <string name="cart">السلة</string>
+    <string name="my_name">الاسم كامل</string>
+    <string name="cart_items">عناصر السلة</string>
+    <string name="total_payment">السعر الكلي </string>
+    <string name="buy_now">شراء الآن </string>
+
+
+    //dialogs
+    <string name="close_app">اغلاق التطبيق</string>
+    <string name="dialog_message">نافذه</string>
+    <string name="dialog_title">عنون</string>
+    <string name="success">حدث بالفعل !</string>
+    <string name="warning">تحذير</string>
+    <string name="error">خطأ</string>
+
+    <string name="cart_add_success">تحديث السلة</string>
+    <string name="cart_text">تمت الاضافة الى السلة</string>
+
+    <string name="connection_error">مشكلة اتصال بالشبكة</string>
+    <string name="connection_error_text">يبدو انه لا يوجد اتصال بالانترنت</string>
+
+    <string name="change_user_password">تغيير كلمة المرور</string>
+
+    <string name="warning_title">تحذير</string>
+    <string name="error_title">خطأ</string>
+
+
+    <string name="okay">نعم</string>
+    <string name="tryAgain">حاول مجدداً</string>
+    <string name="yes">نعم</string>
+    <string name="no">تراجع</string>
+
+
+</resources>

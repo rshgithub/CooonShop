@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Orange">#F55A00</color>
+    <color name="Light_Orange">#FD9152</color>
+    <color name="lightgray">#CAC9C9</color>
+    <color name="lightpurple">#FFF3F0FB</color>
+    <color name="pink">#FFC7D7</color>
+    <color name="Darkpink">#AE5E75</color>
+    <color name="PopRedPink">#FF5858</color>
+    <color name="PopPink">#FB5895</color>
+    <color name="LightPink">#FFD8E7</color>
+    <color name="ShadowPink">#FFB2CF</color>
+    <color name="ShadowPurple">#EFA4FD</color>
+    <color name="GreenPrice">#20AA26</color>
+    <color name="DarkGreen">#085506</color>
+    <color name="Green">#7CB342</color>
+    <color name="transparent">#00FFC7D7</color>
+    <color name="grey">#4C4646</color>
+    <color name="LightGreen">#8BE68F</color>
+    <color name="lightgrey">#8C8C8C</color>
+
+    // dialog colors
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSuccess">#4BB543</color>
+    <color name="colorWarning">#FFCC00</color>
+    <color name="colorNeutral">#434343</color>
+    <color name="colorError">#CC0000</color>
+    <color name="colorTextPrimary">#212121</color>
+
+    // nav-drawer colors
+    <color name="lighgrey">#989797</color>
+    <color name="underline">#D8D6D6</color>
+
+
+    //onboarding colors
+    <color name="background">#F0F4F3</color>
+    <color name="buttontext">#50C2C9</color>
+
+
+    //indicator color
+    <color name="inactive">#FFD8E7</color>
+    <color name="active">#FB5895</color>
+</resources>
