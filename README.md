@@ -5,6 +5,7 @@
 ![Screenshot (424)](https://user-images.githubusercontent.com/29553481/200158295-0657b25a-7c99-4025-b974-7b89081a47bc.png)
 ![Screenshot (426)](https://user-images.githubusercontent.com/29553481/200159518-3a9e91ca-e927-44cf-a2f0-fb42f43b4956.png)
 
+
 <h1 align="center">Welcome to ShopProductGuide Android Application 👋</h1>
 <p align="center">
   <img src="https://img.shields.io/npm/v/readme-md-generator.svg?orange=blue" />
@@ -26,21 +27,34 @@
 - Contact the owner directly from the app
 - Search for products using text or speech
 - Stay updated on latest products and offers
+- Image Slider
+- Material Date Time Picker
+- Material Spinner
+- Material Card View
+- Room Database
+- Like Button Animation
+- Toasty Notifications
+- Swipe Button
+- Glide Image Loading
+- Firebase Authentication
+- Firebase Cloud Storage
+- Firebase Firestore
+- Shimmer Effect
+- Country & Phone Spinner
 
 ## 🛠️ Tools
 
-- **Development Environment:** Android Studio
-- **Platform:** Android
-- **Programming Language:** Java
-- **Voice Search:** Google Speech to Text recognition
-- **Database:** Firebase Firestore
-- **Authentication:** Firebase Authentication
-- **Design:** Adobe XD
+- ![Android Studio Icon](https://img.icons8.com/color/32/000000/android-studio--v3.png) **Development Environment:** Android Studio
+- ![Java Icon](https://img.icons8.com/color/32/000000/java-coffee-cup-logo.png) **Programming Language:** Java
+- ![Microphone Icon](https://img.icons8.com/ios/32/000000/microphone.png) **Voice Search:** Google Speech to Text recognition
+- ![Firebase Icon](https://img.icons8.com/color/32/000000/firebase.png) **Database:** Firebase Firestore
+- ![Authentication Icon](https://img.icons8.com/color/32/000000/lock.png) **Authentication:** Firebase Authentication
+- ![Adobe XD Icon](https://img.icons8.com/color/32/000000/adobe-xd.png) **Design:** Adobe XD
 - **User Experience:** Smooth and easy-to-use interface
-
+  
 ## 🚀 Getting Started
 
-1. **Download:** [Download the APK file from here]
+1. **Download:** <a href="https://drive.google.com/file/d/1TDXRHH5-wovgfL-H-UeanPD959ERjj7I/view?usp=sharing" target="_blank">Download APK</a>
 2. **Installation:** Install the APK file on your Android device.
 3. **Configuration:** Follow on-screen instructions to set up your account and preferences.
 4. **Running:** Open the application on your Android device and start exploring products.
@@ -56,4 +70,3 @@ This project is [MIT](https://github.com/yourusername/yourproject/blob/master/LI
 ---
 
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
-
