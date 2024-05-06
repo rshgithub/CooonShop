@@ -1,5 +1,5 @@
 
-<h1 align="center">Welcome to ShopProductGuide Android Application 👋</h1>
+<h1 align="center">Welcome to CoCoon Shop Android Application 👋</h1>
 
 ![Screenshot (422)](https://user-images.githubusercontent.com/29553481/200158292-a684520e-e16d-4f74-8a44-36f1e4716133.png)
 ![Screenshot (423)](https://user-images.githubusercontent.com/29553481/200158293-4cbf996e-017b-4477-9b03-0323b61e8f6f.png)
